@@ -94,6 +94,7 @@ a:visited { color: #633; }
   /*min-height: 56px;*/
   height: 100%;
   max-width:400px;
+  min-width:100px;
   width: 20%;
   float: left;
   background-color: black;
