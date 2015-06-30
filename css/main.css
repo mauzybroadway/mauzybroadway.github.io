@@ -93,9 +93,9 @@ a:visited { color: #633; }
   border-bottom: 1px solid #e8e8e8;
   /*min-height: 56px;*/
   height: 100%;
-  max-width:400px;
-  min-width:100px;
   width: 20%;
+  max-width:200px;
+  min-width:100px;
   float: left;
   background-color: black;
   position:fixed;
