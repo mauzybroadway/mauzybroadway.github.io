@@ -5,8 +5,8 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://yourdomain.com/~blwetze/qqsite/</link>
     <atom:link href="http://yourdomain.com/~blwetze/qqsite/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 30 Jun 2015 13:00:48 -0400</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2015 13:00:48 -0400</lastBuildDate>
+    <pubDate>Tue, 30 Jun 2015 13:06:00 -0400</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2015 13:06:00 -0400</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -34,6 +34,19 @@
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Another Post</title>
+        <description>&lt;p&gt;Woah, look at this, its another post. I bet it looks pretty cool down here below the other one.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 28 Jun 2015 14:14:14 -0400</pubDate>
+        <link>http://yourdomain.com/~blwetze/qqsite/jqi/2015/06/28/another-post/</link>
+        <guid isPermaLink="true">http://yourdomain.com/~blwetze/qqsite/jqi/2015/06/28/another-post/</guid>
+        
+        
+        <category>jqi</category>
         
       </item>
     
