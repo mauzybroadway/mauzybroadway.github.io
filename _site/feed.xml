@@ -2,16 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>QQ Group</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
-    <link>http://yourdomain.com/~blwetze/qqsite/</link>
-    <atom:link href="http://yourdomain.com/~blwetze/qqsite/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 30 Jun 2015 13:06:00 -0400</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2015 13:06:00 -0400</lastBuildDate>
+    <description>A dope site for dope people.</description>
+    <link>http://jqi.umd.edu//~blwetze/qqsite/</link>
+    <atom:link href="http://jqi.umd.edu//~blwetze/qqsite/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 30 Jun 2015 14:54:19 -0400</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2015 14:54:19 -0400</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
+        <title>DDS</title>
+        <description>&lt;p&gt;The aptly named Direct Digital Synthesizer (DDS) is a device which digitally (and directly…) synthesizes precise waveforms in a conveniently programmable manner. Most often, DDSs output sinusoids, but can theoretically output any periodic function. &lt;/p&gt;
+
+&lt;h3 id=&quot;calculating-output&quot;&gt;Calculating Output&lt;/h3&gt;
+&lt;p&gt;A DDS crafts its output by stepping through a wavetable (often sinusoidal) stored in ROM. Each entry in the wavetable is typically an integer or fixed-point value representing a voltage level, which is then sent to a Digital-to-Analog Converter (DAC) to prepare an analog output signal. To output a range of frequencies, the DDS makes use of a &lt;em&gt;phase accumulator&lt;/em&gt; which represents the current index in the wavetable. If the phase accumulator is incremented by 1 on each clock pulse, the DDS will step through every value in the wavetable, thus creating its lowest possible frequency. If the phase accumulator has &lt;script type=&quot;math/tex&quot;&gt;n&lt;/script&gt; bits, the output frequency is defined as:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f_{out} = \frac{f_{clk}}{2^n}&lt;/script&gt;
+
+&lt;p&gt;However, if the wavetable is incremented by some some larger value, the faster the output frequency. This incrementation value is defined by the &lt;em&gt;tuning word&lt;/em&gt;, &lt;script type=&quot;math/tex&quot;&gt;M&lt;/script&gt;, which is a programmable register on the DDS. With the inclusion of a tuning word, the output frequency is now defined as:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;f_{out} = M\frac{f_{clk}}{2^n}&lt;/script&gt;
+
+&lt;p&gt;Output waveforms are limited to about 40% of the clock frequency (&lt;script type=&quot;math/tex&quot;&gt;f_{clk}&lt;/script&gt;) to avoid errors which occur when approaching and surpassing the Nyquist frequency (half of the sampling rate, which is in this case &lt;script type=&quot;math/tex&quot;&gt;f_{clk}&lt;/script&gt;).&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 Jun 2015 14:14:14 -0400</pubDate>
+        <link>http://jqi.umd.edu//~blwetze/qqsite/jqi/dds/2015/06/30/dds/</link>
+        <guid isPermaLink="true">http://jqi.umd.edu//~blwetze/qqsite/jqi/dds/2015/06/30/dds/</guid>
+        
+        
+        <category>jqi</category>
+        
+        <category>dds</category>
+        
+      </item>
+    
+      <item>
         <title>Fancy Things</title>
-        <description>&lt;p&gt;You can do all sorts of fancy stuff, like write the TI-Schrondinger equation:&lt;/p&gt;
+        <description>&lt;p&gt;You can do all sorts of fancy stuff, like write the TI-Schrodinger equation:&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;-\frac{\hbar ^2}{2m} \psi _{xx} + V\psi = E\psi&lt;/script&gt;
 
@@ -27,8 +53,8 @@
 
 </description>
         <pubDate>Mon, 29 Jun 2015 14:14:14 -0400</pubDate>
-        <link>http://yourdomain.com/~blwetze/qqsite/jekyll/update/2015/06/29/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://yourdomain.com/~blwetze/qqsite/jekyll/update/2015/06/29/welcome-to-jekyll/</guid>
+        <link>http://jqi.umd.edu//~blwetze/qqsite/jekyll/update/2015/06/29/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://jqi.umd.edu//~blwetze/qqsite/jekyll/update/2015/06/29/welcome-to-jekyll/</guid>
         
         
         <category>jekyll</category>
@@ -42,8 +68,8 @@
         <description>&lt;p&gt;Woah, look at this, its another post. I bet it looks pretty cool down here below the other one.&lt;/p&gt;
 </description>
         <pubDate>Sun, 28 Jun 2015 14:14:14 -0400</pubDate>
-        <link>http://yourdomain.com/~blwetze/qqsite/jqi/2015/06/28/another-post/</link>
-        <guid isPermaLink="true">http://yourdomain.com/~blwetze/qqsite/jqi/2015/06/28/another-post/</guid>
+        <link>http://jqi.umd.edu//~blwetze/qqsite/jqi/2015/06/28/another-post/</link>
+        <guid isPermaLink="true">http://jqi.umd.edu//~blwetze/qqsite/jqi/2015/06/28/another-post/</guid>
         
         
         <category>jqi</category>
@@ -55,8 +81,8 @@
         <description>&lt;p&gt;Woah, look at this, its another post. I bet it looks pretty cool down here below the other one.&lt;/p&gt;
 </description>
         <pubDate>Sun, 28 Jun 2015 14:14:14 -0400</pubDate>
-        <link>http://yourdomain.com/~blwetze/qqsite/jqi/2015/06/28/another-post/</link>
-        <guid isPermaLink="true">http://yourdomain.com/~blwetze/qqsite/jqi/2015/06/28/another-post/</guid>
+        <link>http://jqi.umd.edu//~blwetze/qqsite/jqi/2015/06/28/another-post/</link>
+        <guid isPermaLink="true">http://jqi.umd.edu//~blwetze/qqsite/jqi/2015/06/28/another-post/</guid>
         
         
         <category>jqi</category>

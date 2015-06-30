@@ -5,7 +5,7 @@ date:   2015-06-29 18:14:14
 categories: jekyll update
 ---
 
-You can do all sorts of fancy stuff, like write the TI-Schrondinger equation:
+You can do all sorts of fancy stuff, like write the TI-Schrodinger equation:
 
 
 $$-\frac{\hbar ^2}{2m} \psi _{xx} + V\psi = E\psi$$

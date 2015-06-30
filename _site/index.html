@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>QQ Group</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
-    <link rel="canonical" href="http://yourdomain.com/~blwetze/qqsite/">
+    <meta name="description" content="A dope site for dope people.">
+    <link rel="canonical" href="http://jqi.umd.edu//~blwetze/qqsite/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/~blwetze/qqsite/css/main.css">
@@ -73,9 +73,27 @@
   <ul class="posts">
     
       <li>
+        <a class="post-link" href="/~blwetze/qqsite/jqi/dds/2015/06/30/dds/">DDS</a>
+        <span class="post-date">Jun 30, 2015</span>
+	<div class="post-content"><p>The aptly named Direct Digital Synthesizer (DDS) is a device which digitally (and directly…) synthesizes precise waveforms in a conveniently programmable manner. Most often, DDSs output sinusoids, but can theoretically output any periodic function. </p>
+
+<h3 id="calculating-output">Calculating Output</h3>
+<p>A DDS crafts its output by stepping through a wavetable (often sinusoidal) stored in ROM. Each entry in the wavetable is typically an integer or fixed-point value representing a voltage level, which is then sent to a Digital-to-Analog Converter (DAC) to prepare an analog output signal. To output a range of frequencies, the DDS makes use of a <em>phase accumulator</em> which represents the current index in the wavetable. If the phase accumulator is incremented by 1 on each clock pulse, the DDS will step through every value in the wavetable, thus creating its lowest possible frequency. If the phase accumulator has <script type="math/tex">n</script> bits, the output frequency is defined as:</p>
+
+<script type="math/tex; mode=display">f_{out} = \frac{f_{clk}}{2^n}</script>
+
+<p>However, if the wavetable is incremented by some some larger value, the faster the output frequency. This incrementation value is defined by the <em>tuning word</em>, <script type="math/tex">M</script>, which is a programmable register on the DDS. With the inclusion of a tuning word, the output frequency is now defined as:</p>
+
+<script type="math/tex; mode=display">f_{out} = M\frac{f_{clk}}{2^n}</script>
+
+<p>Output waveforms are limited to about 40% of the clock frequency (<script type="math/tex">f_{clk}</script>) to avoid errors which occur when approaching and surpassing the Nyquist frequency (half of the sampling rate, which is in this case <script type="math/tex">f_{clk}</script>).</p>
+</div>
+      </li>
+    
+      <li>
         <a class="post-link" href="/~blwetze/qqsite/jekyll/update/2015/06/29/welcome-to-jekyll/">Fancy Things</a>
         <span class="post-date">Jun 29, 2015</span>
-	<div class="post-content"><p>You can do all sorts of fancy stuff, like write the TI-Schrondinger equation:</p>
+	<div class="post-content"><p>You can do all sorts of fancy stuff, like write the TI-Schrodinger equation:</p>
 
 <script type="math/tex; mode=display">-\frac{\hbar ^2}{2m} \psi _{xx} + V\psi = E\psi</script>
 
@@ -122,7 +140,7 @@
     <div class="footer-col-1 column">
       <ul>
         <!--li>QQ Group</li-->
-        <li><a href="mailto:your-email@domain.com">your-email@domain.com</a></li>
+        <li><a href="mailto:mauzybwy@gmail.com">mauzybwy@gmail.com</a></li>
       </ul>
     </div>
 
@@ -132,7 +150,7 @@
     </div>
 
     <div class="footer-col-3 column">
-      <!--p class="text">Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p-->
+      <!--p class="text">A dope site for dope people.</p-->
     </div>
 
   </div>

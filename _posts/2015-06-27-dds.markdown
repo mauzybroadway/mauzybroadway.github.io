@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "DDS"
+date:   2015-06-30 18:14:14
+categories: jqi dds
+---
+
+The aptly named Direct Digital Synthesizer (DDS) is a device which digitally (and directly...) synthesizes precise waveforms in a conveniently programmable manner. Most often, DDSs output sinusoids, but can theoretically output any periodic function. 
+
+###Calculating Output
+A DDS crafts its output by stepping through a wavetable (often sinusoidal) stored in ROM. Each entry in the wavetable is typically an integer or fixed-point value representing a voltage level, which is then sent to a Digital-to-Analog Converter (DAC) to prepare an analog output signal. To output a range of frequencies, the DDS makes use of a *phase accumulator* which represents the current index in the wavetable. If the phase accumulator is incremented by 1 on each clock pulse, the DDS will step through every value in the wavetable, thus creating its lowest possible frequency. If the phase accumulator has $$n$$ bits, the output frequency is defined as:
+
+$$f_{out} = \frac{f_{clk}}{2^n}$$
+
+However, if the wavetable is incremented by some some larger value, the faster the output frequency. This incrementation value is defined by the *tuning word*, $$M$$, which is a programmable register on the DDS. With the inclusion of a tuning word, the output frequency is now defined as:
+
+$$f_{out} = M\frac{f_{clk}}{2^n}$$
+
+Output waveforms are limited to about 40% of the clock frequency ($$f_{clk}$$) to avoid errors which occur when approaching and surpassing the Nyquist frequency (half of the sampling rate, which is in this case $$f_{clk}$$).

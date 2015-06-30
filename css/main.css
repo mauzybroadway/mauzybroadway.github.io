@@ -52,7 +52,7 @@ a:visited { color: #633; }
 }
 
 .site-header:hover {
-    width: 200px !important;
+    width: 20% !important;
     transition: .5s;
     transition-timing-function: ease-out;
 }
@@ -78,10 +78,11 @@ a:visited { color: #633; }
 }
 
 .site-header:hover ~ .page-content {
-  width: -webkit-calc(100% - 200px);
+  /*width: -webkit-calc(100% - 200px);
   width: -moz-calc(100% - 200px);
   width: -o-calc(100% - 200px);
-  width: calc(100% - 200px);
+  width: calc(100% - 200px);*/
+  width:80%;
   transition: .5s;
   transition-timing-function: ease-out;
 }
@@ -92,7 +93,7 @@ a:visited { color: #633; }
   border-bottom: 1px solid #e8e8e8;
   /*min-height: 56px;*/
   height: 100%;
-  width: 200px;
+  width: 20%;
   float: left;
   background-color: black;
   position:fixed;
@@ -214,17 +215,18 @@ a:visited { color: #633; }
 
 
 .page-content {
-  background-color: #111;
+  background-color: #fee;
   position: absolute;
   overflow-y:scroll;
   overflow-x:auto;
   /*left:auto;*/
   right:0;
   margin-right:0;
-  width: -webkit-calc(100% - 100px);
+  /*width: -webkit-calc(100% - 100px);
   width: -moz-calc(100% - 100px);
   width: -o-calc(100% - 100px);
-  width: calc(100% - 100px);
+  width: calc(100% - 200px);*/
+  width: 80%;
 
   transition: .3s;
 }
@@ -240,10 +242,11 @@ a:visited { color: #633; }
     list-style-type: none;
     /*padding-left: 150px;
     padding-right: 200px;*/
-    width: 600px;
+    width: 70%;
     margin: auto;
     padding-top: 50px;
     left:200px;
+    display: block;
 }
 
 
@@ -274,7 +277,8 @@ a:visited { color: #633; }
     padding-bottom: 50px;
     padding-right: 0;
     padding-left: 0;
-    color: #a99;
+    color: #322;
+    text-align: justify;
 }
 
 .post-header { margin: 10px 0 30px; }
