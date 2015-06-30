@@ -3,10 +3,10 @@
   <channel>
     <title>QQ Group</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 30 Jun 2015 12:19:56 -0400</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2015 12:19:56 -0400</lastBuildDate>
+    <link>http://yourdomain.com/qqsite/</link>
+    <atom:link href="http://yourdomain.com/qqsite/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 30 Jun 2015 12:56:08 -0400</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2015 12:56:08 -0400</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -27,8 +27,8 @@
 
 </description>
         <pubDate>Mon, 29 Jun 2015 14:14:14 -0400</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2015/06/29/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/06/29/welcome-to-jekyll/</guid>
+        <link>http://yourdomain.com/qqsite/jekyll/update/2015/06/29/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://yourdomain.com/qqsite/jekyll/update/2015/06/29/welcome-to-jekyll/</guid>
         
         
         <category>jekyll</category>
@@ -42,8 +42,8 @@
         <description>&lt;p&gt;Woah, look at this, its another post. I bet it looks pretty cool down here below the other one.&lt;/p&gt;
 </description>
         <pubDate>Sun, 28 Jun 2015 14:14:14 -0400</pubDate>
-        <link>http://yourdomain.com/jqi/2015/06/28/another-post/</link>
-        <guid isPermaLink="true">http://yourdomain.com/jqi/2015/06/28/another-post/</guid>
+        <link>http://yourdomain.com/qqsite/jqi/2015/06/28/another-post/</link>
+        <guid isPermaLink="true">http://yourdomain.com/qqsite/jqi/2015/06/28/another-post/</guid>
         
         
         <category>jqi</category>
