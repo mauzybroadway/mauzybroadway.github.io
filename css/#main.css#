@@ -228,7 +228,6 @@ a:visited { color: #633; }
   max-width: -moz-calc(100% - 200px);
   max-width: -o-calc(100% - 200px);
   max-width: calc(100% - 200px);
-  
   transition: .3s;
 }
 
