@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>QQ Group</title>
+    <title>Skabenga!</title>
     <description>A dope site for dope people.</description>
-    <link>http://jqi.umd.edu//~blwetze/qqsite/</link>
-    <atom:link href="http://jqi.umd.edu//~blwetze/qqsite/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 30 Jun 2015 16:09:58 -0400</pubDate>
-    <lastBuildDate>Tue, 30 Jun 2015 16:09:58 -0400</lastBuildDate>
+    <link>http://jqi.umd.edu//</link>
+    <atom:link href="http://jqi.umd.edu//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 28 Jul 2015 22:31:02 -0400</pubDate>
+    <lastBuildDate>Tue, 28 Jul 2015 22:31:02 -0400</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -25,8 +25,8 @@
 &lt;p&gt;Output waveforms are limited to about 40% of the clock frequency (&lt;script type=&quot;math/tex&quot;&gt;f_{clk}&lt;/script&gt;) to avoid errors which occur when approaching and surpassing the Nyquist frequency (half of the sampling rate, which is in this case &lt;script type=&quot;math/tex&quot;&gt;f_{clk}&lt;/script&gt;).&lt;/p&gt;
 </description>
         <pubDate>Tue, 30 Jun 2015 14:14:14 -0400</pubDate>
-        <link>http://jqi.umd.edu//~blwetze/qqsite/jqi/dds/2015/06/30/dds/</link>
-        <guid isPermaLink="true">http://jqi.umd.edu//~blwetze/qqsite/jqi/dds/2015/06/30/dds/</guid>
+        <link>http://jqi.umd.edu//jqi/dds/2015/06/30/dds/</link>
+        <guid isPermaLink="true">http://jqi.umd.edu//jqi/dds/2015/06/30/dds/</guid>
         
         
         <category>jqi</category>
@@ -53,8 +53,8 @@
 
 </description>
         <pubDate>Mon, 29 Jun 2015 14:14:14 -0400</pubDate>
-        <link>http://jqi.umd.edu//~blwetze/qqsite/jekyll/update/2015/06/29/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://jqi.umd.edu//~blwetze/qqsite/jekyll/update/2015/06/29/welcome-to-jekyll/</guid>
+        <link>http://jqi.umd.edu//jekyll/update/2015/06/29/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://jqi.umd.edu//jekyll/update/2015/06/29/welcome-to-jekyll/</guid>
         
         
         <category>jekyll</category>
@@ -68,8 +68,8 @@
         <description>&lt;p&gt;Woah, look at this, its another post. I bet it looks pretty cool down here below the other one.&lt;/p&gt;
 </description>
         <pubDate>Sun, 28 Jun 2015 14:14:14 -0400</pubDate>
-        <link>http://jqi.umd.edu//~blwetze/qqsite/jqi/2015/06/28/another-post/</link>
-        <guid isPermaLink="true">http://jqi.umd.edu//~blwetze/qqsite/jqi/2015/06/28/another-post/</guid>
+        <link>http://jqi.umd.edu//jqi/2015/06/28/another-post/</link>
+        <guid isPermaLink="true">http://jqi.umd.edu//jqi/2015/06/28/another-post/</guid>
         
         
         <category>jqi</category>
@@ -81,8 +81,8 @@
         <description>&lt;p&gt;Woah, look at this, its another post. I bet it looks pretty cool down here below the other one.&lt;/p&gt;
 </description>
         <pubDate>Sun, 28 Jun 2015 14:14:14 -0400</pubDate>
-        <link>http://jqi.umd.edu//~blwetze/qqsite/jqi/2015/06/28/another-post/</link>
-        <guid isPermaLink="true">http://jqi.umd.edu//~blwetze/qqsite/jqi/2015/06/28/another-post/</guid>
+        <link>http://jqi.umd.edu//jqi/2015/06/28/another-post/</link>
+        <guid isPermaLink="true">http://jqi.umd.edu//jqi/2015/06/28/another-post/</guid>
         
         
         <category>jqi</category>

@@ -1,2 +1,2 @@
-# qqsite
-Static blog-type site for QQ Lab
+# skabenga!
+I am your overlord
