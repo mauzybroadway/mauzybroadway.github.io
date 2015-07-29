@@ -6,10 +6,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>DDS</title>
+    <title>STM32F4 Linux Development - Barbones Setup</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="A dope site for dope people.">
-    <link rel="canonical" href="http://jqi.umd.edu//jqi/dds/2015/06/30/dds/">
+    <link rel="canonical" href="http://jqi.umd.edu//stm32f4/arm/linux/2015/07/28/stm_setup/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -71,23 +71,17 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>DDS</h1>
-    <p class="meta">Jun 30, 2015</p>
+    <h1>STM32F4 Linux Development - Barbones Setup</h1>
+    <p class="meta">Jul 28, 2015</p>
   </header>
 
   <article class="post-content">
-  <p>The aptly named Direct Digital Synthesizer (DDS) is a device which digitally (and directly…) synthesizes precise waveforms in a conveniently programmable manner. Most often, DDSs output sinusoids, but can theoretically output any periodic function. </p>
+  <p>So, you decided embedded programming is what the hip kids do these days.  You got super excited at the sight of an ARM Cortex M4 eval board for fifteen measly dollars, you bought it, ideas saturate your brain and you can’t wait to wring out your thoughts into this thing. But it just sits there on your table begging for sweet binary nectar. How do you feed it?</p>
 
-<h3 id="calculating-output">Calculating Output</h3>
-<p>A DDS crafts its output by stepping through a wavetable (often sinusoidal) stored in ROM. Each entry in the wavetable is typically an integer or fixed-point value representing a voltage level, which is then sent to a Digital-to-Analog Converter (DAC) to prepare an analog output signal. To output a range of frequencies, the DDS makes use of a <em>phase accumulator</em> which represents the current index in the wavetable. If the phase accumulator is incremented by 1 on each clock pulse, the DDS will step through every value in the wavetable, thus creating its lowest possible frequency. If the phase accumulator has <script type="math/tex">n</script> bits, the output frequency is defined as:</p>
+<p>For the past four months, I have been running the limited version of Keil </p>
 
-<script type="math/tex; mode=display">f_{out} = \frac{f_{clk}}{2^n}</script>
+<h2 id="tools-required">Tools Required:</h2>
 
-<p>However, if the wavetable is incremented by some some larger value, the faster the output frequency. This incrementation value is defined by the <em>tuning word</em>, <script type="math/tex">M</script>, which is a programmable register on the DDS. With the inclusion of a tuning word, the output frequency is now defined as:</p>
-
-<script type="math/tex; mode=display">f_{out} = M\frac{f_{clk}}{2^n}</script>
-
-<p>Output waveforms are limited to about 40% of the clock frequency (<script type="math/tex">f_{clk}</script>) to avoid errors which occur when approaching and surpassing the Nyquist frequency (half of the sampling rate, which is in this case <script type="math/tex">f_{clk}</script>).</p>
 
   </article>
 
