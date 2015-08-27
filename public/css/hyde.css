@@ -86,26 +86,60 @@ html {
 }
 
 /* About section */
-.sidebar-about h1 {
-  color: #fff;
-  margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 1.25rem;
+.sidebar-title {
+    color: #fff;
+    margin: auto;
+    font-family: "Abril Fatface", serif;
+    font-size: 3.25rem;
+    text-align:center;
+    text-decoration:none;
+    padding:0;
+    margin-top: -1.5rem;
+    line-height: 4rem;
 }
+
+@media (min-width: 48em) {
+    .sidebar-title {
+	position: static;
+	top:0;
+	margin-top: auto;
+	line-height: 1rem;
+  }
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 48em) {
+    .hidden {
+	display:block;
+  }
+}
+
 
 /* Sidebar nav */
 .sidebar-nav {
-    padding-top: 2rem;
-    padding-bottom:2rem;
-  margin-bottom: 1rem;
+    margin-bottom: 0;
 }
+
+@media (min-width: 48em) {
+    .sidebar-nav {
+	/*position: absolute;
+	bottom: 1em;*/
+	margin-top:50%;
+	margin-bottom:50%;
+	text-align:center;
+	line-height: 2.75;
+  }
+}
+
 .sidebar-nav-item {
   display: block;
-  line-height: 1.75;
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .sidebar-nav-item.active {
   font-weight: bold;

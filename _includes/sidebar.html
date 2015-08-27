@@ -6,13 +6,18 @@
 	<img src="/public/ele.jpg"/>
       </a>
     </div>
+    <div class="sidebar-title">
+      <a href="{{ site.baseurl }}">
+	<u>{{ site.title }}</u>
+      </a>
+    </div>
 
-    <div class="sidebar-body">
+    <div class="sidebar-body hidden">
       <div class="sidebar-about">
 	<p class="lead">{{ site.description }}</p>
       </div>
       
-      <nav class="sidebar-nav">
+      <nav class="sidebar-nav hidden">
 	<a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 	
 	{% comment %}
@@ -34,7 +39,7 @@
 	
       </nav>
     </div>
-    <div class="sidebar-bottom">
+    <div class="sidebar-bottom hidden">
       <p class="small">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
     </div>
   </div>
