@@ -22,4 +22,4 @@ Stallman would probably come after me with a katana if I ran Keil.
 ##Tools Required:
 - [Eclipse IDE](http://www.eclipse.org/downloads/)\\
 - [GNU ARM Eclipse plugin](gnuarmeclipse.livius.net/blog/)\\
-- - Includes the [GNU ARM Embedded toolchain (arm-none-eabi-gcc)]()
+  - Includes the [GNU ARM Embedded toolchain (arm-none-eabi-gcc)]()

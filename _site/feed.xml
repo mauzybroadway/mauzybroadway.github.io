@@ -5,8 +5,8 @@
     <description>A dope site for dope people.</description>
     <link>http://jqi.umd.edu//</link>
     <atom:link href="http://jqi.umd.edu//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 26 Aug 2015 22:20:34 -0400</pubDate>
-    <lastBuildDate>Wed, 26 Aug 2015 22:20:34 -0400</lastBuildDate>
+    <pubDate>Wed, 26 Aug 2015 22:25:34 -0400</pubDate>
+    <lastBuildDate>Wed, 26 Aug 2015 22:25:34 -0400</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -53,8 +53,7 @@ Stallman would probably come after me with a katana if I ran Keil.&lt;/p&gt;
 &lt;h2 id=&quot;tools-required&quot;&gt;Tools Required:&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.eclipse.org/downloads/&quot;&gt;Eclipse IDE&lt;/a&gt;\&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;gnuarmeclipse.livius.net/blog/&quot;&gt;GNU ARM Eclipse plugin&lt;/a&gt;\&lt;/li&gt;
-  &lt;li&gt;
+  &lt;li&gt;&lt;a href=&quot;gnuarmeclipse.livius.net/blog/&quot;&gt;GNU ARM Eclipse plugin&lt;/a&gt;&lt;br /&gt;
     &lt;ul&gt;
       &lt;li&gt;Includes the &lt;a href=&quot;&quot;&gt;GNU ARM Embedded toolchain (arm-none-eabi-gcc)&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
