@@ -5,8 +5,8 @@
     <description>A dope site for dope people.</description>
     <link>http://jqi.umd.edu//</link>
     <atom:link href="http://jqi.umd.edu//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 29 Jul 2015 00:23:30 -0400</pubDate>
-    <lastBuildDate>Wed, 29 Jul 2015 00:23:30 -0400</lastBuildDate>
+    <pubDate>Wed, 26 Aug 2015 22:20:34 -0400</pubDate>
+    <lastBuildDate>Wed, 26 Aug 2015 22:20:34 -0400</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -35,13 +35,31 @@ I hear that you and your band have sold your &lt;strong&gt;guitars&lt;/strong&gt
       </item>
     
       <item>
-        <title>STM32F4 Linux Development - Barbones Setup</title>
-        <description>&lt;p&gt;So, you decided embedded programming is what the hip kids do these days.  You got super excited at the sight of an ARM Cortex M4 eval board for fifteen measly dollars, you bought it, ideas saturate your brain and you can’t wait to wring out your thoughts into this thing. But it just sits there on your table begging for sweet binary nectar. How do you feed it?&lt;/p&gt;
+        <title>STM32F4 Linux Development - Eclipse + GCC ARM Embedded + openOCD</title>
+        <description>&lt;p&gt;So, you decided embedded programming is what the hip kids do these days.  You
+got super excited at the sight of an ARM Cortex M4 eval board for fifteen measly
+dollars, you bought it, ideas saturate your brain and you can’t wait to wring
+out your thoughts into this thing. But it just sits there on your table begging
+for sweet binary nectar. How do you feed it?&lt;/p&gt;
 
-&lt;p&gt;For the past four months, I have been running the limited version of Keil &lt;/p&gt;
+&lt;p&gt;For the past four months I have been running the limited version of Keil,
+chained to the measly 32kB debug limit I was quickly limited to debugging
+diassembly. While that works great for debugging assembly code, the lack of
+debugging information in the disassembly made working with C code a
+nightmare. So it’s time to ditch the VM and head back to the wonderful, organic
+world of FOSS. Besides, I also switched over to a notebook running Debian and
+Stallman would probably come after me with a katana if I ran Keil.&lt;/p&gt;
 
 &lt;h2 id=&quot;tools-required&quot;&gt;Tools Required:&lt;/h2&gt;
-
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.eclipse.org/downloads/&quot;&gt;Eclipse IDE&lt;/a&gt;\&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;gnuarmeclipse.livius.net/blog/&quot;&gt;GNU ARM Eclipse plugin&lt;/a&gt;\&lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Includes the &lt;a href=&quot;&quot;&gt;GNU ARM Embedded toolchain (arm-none-eabi-gcc)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Tue, 28 Jul 2015 19:23:23 -0400</pubDate>
         <link>http://jqi.umd.edu//stm32f4/arm/linux/2015/07/28/stm_setup/</link>

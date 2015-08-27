@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>STM32F4 Linux Development - Barbones Setup</title>
+    <title>STM32F4 Linux Development - Eclipse + GCC ARM Embedded + openOCD</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="A dope site for dope people.">
     <link rel="canonical" href="http://jqi.umd.edu//stm32f4/arm/linux/2015/07/28/stm_setup/">
@@ -71,17 +71,35 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>STM32F4 Linux Development - Barbones Setup</h1>
+    <h1>STM32F4 Linux Development - Eclipse + GCC ARM Embedded + openOCD</h1>
     <p class="meta">Jul 28, 2015</p>
   </header>
 
   <article class="post-content">
-  <p>So, you decided embedded programming is what the hip kids do these days.  You got super excited at the sight of an ARM Cortex M4 eval board for fifteen measly dollars, you bought it, ideas saturate your brain and you can’t wait to wring out your thoughts into this thing. But it just sits there on your table begging for sweet binary nectar. How do you feed it?</p>
+  <p>So, you decided embedded programming is what the hip kids do these days.  You
+got super excited at the sight of an ARM Cortex M4 eval board for fifteen measly
+dollars, you bought it, ideas saturate your brain and you can’t wait to wring
+out your thoughts into this thing. But it just sits there on your table begging
+for sweet binary nectar. How do you feed it?</p>
 
-<p>For the past four months, I have been running the limited version of Keil </p>
+<p>For the past four months I have been running the limited version of Keil,
+chained to the measly 32kB debug limit I was quickly limited to debugging
+diassembly. While that works great for debugging assembly code, the lack of
+debugging information in the disassembly made working with C code a
+nightmare. So it’s time to ditch the VM and head back to the wonderful, organic
+world of FOSS. Besides, I also switched over to a notebook running Debian and
+Stallman would probably come after me with a katana if I ran Keil.</p>
 
 <h2 id="tools-required">Tools Required:</h2>
-
+<ul>
+  <li><a href="http://www.eclipse.org/downloads/">Eclipse IDE</a>\</li>
+  <li><a href="gnuarmeclipse.livius.net/blog/">GNU ARM Eclipse plugin</a>\</li>
+  <li>
+    <ul>
+      <li>Includes the <a href="">GNU ARM Embedded toolchain (arm-none-eabi-gcc)</a></li>
+    </ul>
+  </li>
+</ul>
 
   </article>
 
