@@ -1,0 +1,12 @@
+# Site settings
+title: Skabenga!
+email: mauzybwy@gmail.com
+description: "A dope site for dope people."
+baseurl: ""
+url: "http://jqi.umd.edu/"
+twitter_username: mauzy_broadway
+github_username:  mauzybroadway
+
+# Build settings
+markdown: kramdown
+permalink: pretty

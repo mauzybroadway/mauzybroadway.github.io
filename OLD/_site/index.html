@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Skabenga!</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="A dope site for dope people.">
+    <link rel="canonical" href="http://jqi.umd.edu//">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+
+    <body>
+
+    <header class="site-header">
+  <a href="" class="menu-icon">	
+    <img src="/images/poincare.jpg" class="icon" alt="Rydberg">
+  </a>
+  
+  <div class="wrap">
+
+    <!--p class="collapsed-title">
+      Q</br>
+      Q</br></br>
+      G</br>
+      R</br>
+      O</br>
+      U</br>
+      P</br>
+    </p-->
+
+    <a class="site-title" href="/">Skabenga!</a>
+
+    <nav class="site-nav">
+      <!--a href="#" class="menu-icon">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
+          <path fill="#505050" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0
+            h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#505050" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484
+            h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#505050" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
+            c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a-->
+      <div class="trigger">
+        
+          <a class="page-link" href="/about/">Members</a>
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrap">
+      <div class="home">
+
+  <ul class="posts">
+    
+      <li>
+        <a class="post-link" href="/stm32f4/arm/synth/music/2015/07/29/synth/">Homemade Synthesizer Baked With Love</a>
+        <span class="post-date">Jul 29, 2015</span>
+	<div class="post-content"><blockquote>
+  <p>I hear that you and your band have sold your <strong>guitars</strong> and bought <strong>turntables</strong>.<br />
+I hear that you and your band have sold your <strong>turntables</strong> and bought <strong>guitars</strong>.<br />
+I hear that you and your band have sold your <strong>guitars</strong> and bought <strong>STM32F4’s</strong>.</p>
+</blockquote>
+
+<p>Ayyy</p>
+</div>
+      </li>
+    
+      <li>
+        <a class="post-link" href="/stm32f4/arm/linux/2015/07/28/stm_setup/">STM32F4 Linux Development - Eclipse + GCC ARM Embedded + openOCD</a>
+        <span class="post-date">Jul 28, 2015</span>
+	<div class="post-content"><p>So, you decided embedded programming is what the hip kids do these days. The
+sight of a $15 ARM board tickled you in places an Arduino could never reach.
+So, you bought it, ideas saturate your brain and you can’t wait to wring
+out your thoughts into this thing. But it just sits there on your table begging
+for sweet binary nectar. How do you feed it?</p>
+
+<p>For the past four months I have been running the limited version of Keil,
+chained to the measly 32kB debug limit I was quickly limited to debugging
+diassembly. While that works great for debugging assembly code, the lack of
+debugging information in the disassembly made working with C code an utter
+nightmare. So it’s time to ditch the VM and head back to the wonderful, organic
+world of FOSS. Besides, I also switched over to a notebook running Debian and
+Stallman would probably come after me with a katana if I ran Keil.</p>
+
+<h2 id="tools-required">Tools Required:</h2>
+<ul>
+  <li><a href="http://www.eclipse.org/downloads/">Eclipse IDE</a></li>
+  <li><a href="gnuarmeclipse.livius.net/blog/">GNU ARM Eclipse plugin</a>
+    <ul>
+      <li>Includes the <a href="">GNU ARM Embedded toolchain (arm-none-eabi-gcc)</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+      </li>
+    
+      <li>
+        <a class="post-link" href="/jqi/dds/2015/06/30/dds/">DDS</a>
+        <span class="post-date">Jun 30, 2015</span>
+	<div class="post-content"><p>The aptly named Direct Digital Synthesizer (DDS) is a device which digitally (and directly…) synthesizes precise waveforms in a conveniently programmable manner. Most often, DDSs output sinusoids, but can theoretically output any periodic function. </p>
+
+<h3 id="calculating-output">Calculating Output</h3>
+<p>A DDS crafts its output by stepping through a wavetable (often sinusoidal) stored in ROM. Each entry in the wavetable is typically an integer or fixed-point value representing a voltage level, which is then sent to a Digital-to-Analog Converter (DAC) to prepare an analog output signal. To output a range of frequencies, the DDS makes use of a <em>phase accumulator</em> which represents the current index in the wavetable. If the phase accumulator is incremented by 1 on each clock pulse, the DDS will step through every value in the wavetable, thus creating its lowest possible frequency. If the phase accumulator has <script type="math/tex">n</script> bits, the output frequency is defined as:</p>
+
+<script type="math/tex; mode=display">f_{out} = \frac{f_{clk}}{2^n}</script>
+
+<p>However, if the wavetable is incremented by some some larger value, the faster the output frequency. This incrementation value is defined by the <em>tuning word</em>, <script type="math/tex">M</script>, which is a programmable register on the DDS. With the inclusion of a tuning word, the output frequency is now defined as:</p>
+
+<script type="math/tex; mode=display">f_{out} = M\frac{f_{clk}}{2^n}</script>
+
+<p>Output waveforms are limited to about 40% of the clock frequency (<script type="math/tex">f_{clk}</script>) to avoid errors which occur when approaching and surpassing the Nyquist frequency (half of the sampling rate, which is in this case <script type="math/tex">f_{clk}</script>).</p>
+</div>
+      </li>
+    
+      <li>
+        <a class="post-link" href="/jekyll/update/2015/06/29/welcome-to-jekyll/">Fancy Things</a>
+        <span class="post-date">Jun 29, 2015</span>
+	<div class="post-content"><p>You can do all sorts of fancy stuff, like write the TI-Schrodinger equation:</p>
+
+<script type="math/tex; mode=display">-\frac{\hbar ^2}{2m} \psi _{xx} + V\psi = E\psi</script>
+
+<p>And write bits of code:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
+<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
+
+<p>Check out more stuff at <a href="http://jqi.umd.edu/">JQI</a></p>
+
+</div>
+      </li>
+    
+      <li>
+        <a class="post-link" href="/jqi/2015/06/28/another-post/">Another Post</a>
+        <span class="post-date">Jun 28, 2015</span>
+	<div class="post-content"><p>Woah, look at this, its another post. I bet it looks pretty cool down here below the other one.</p>
+</div>
+      </li>
+    
+      <li>
+        <a class="post-link" href="/jqi/2015/06/28/another-post/">Another Post</a>
+        <span class="post-date">Jun 28, 2015</span>
+	<div class="post-content"><p>Woah, look at this, its another post. I bet it looks pretty cool down here below the other one.</p>
+</div>
+      </li>
+    
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+
+</div>
+
+      </div>
+      <footer class="site-footer">
+
+  <div class="wrap">
+
+    <!--h2 class="footer-heading">Skabenga!</h2-->
+
+    <div class="footer-col-1 column">
+      <ul>
+        <!--li>Skabenga!</li-->
+        <li><a href="mailto:mauzybwy@gmail.com">mauzybwy@gmail.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col-2 column">
+      <ul>
+      </ul>
+    </div>
+
+    <div class="footer-col-3 column">
+      <!--p class="text">A dope site for dope people.</p-->
+    </div>
+
+  </div>
+
+</footer>
+
+    </div>
+
+    
+
+    </body>
+</html>

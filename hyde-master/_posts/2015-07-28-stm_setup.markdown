@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "STM32F4 Linux Development - Eclipse + GCC ARM Embedded + openOCD"
+subtitle: "The Setup"
+date:   2015-07-28 23:23:23
+categories: stm32f4 arm linux
+---
+So, you decided embedded programming is what the hip kids do these days. The
+sight of a $15 ARM board tickled you in places an Arduino could never reach.
+So, you bought it, ideas saturate your brain and you can't wait to wring
+out your thoughts into this thing. But it just sits there on your table begging
+for sweet binary nectar. How do you feed it?
+
+For the past four months I have been running the limited version of Keil,
+chained to the measly 32kB debug limit I was quickly limited to debugging
+diassembly. While that works great for debugging assembly code, the lack of
+debugging information in the disassembly made working with C code an utter
+nightmare. So it's time to ditch the VM and head back to the wonderful, organic
+world of FOSS. Besides, I also switched over to a notebook running Debian and
+Stallman would probably come after me with a katana if I ran Keil.
+
+##Tools Required:
+- [Eclipse IDE](http://www.eclipse.org/downloads/)
+- [GNU ARM Eclipse plugin](gnuarmeclipse.livius.net/blog/)
+  - Includes the [GNU ARM Embedded toolchain (arm-none-eabi-gcc)]()

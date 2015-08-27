@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Fancy Things"
+date:   2015-06-29 18:14:14
+categories: jekyll update
+---
+
+You can do all sorts of fancy stuff, like write the TI-Schrodinger equation:
+
+
+$$-\frac{\hbar ^2}{2m} \psi _{xx} + V\psi = E\psi$$
+
+And write bits of code:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check out more stuff at [JQI][jqi]
+
+[jqi]:    http://jqi.umd.edu/

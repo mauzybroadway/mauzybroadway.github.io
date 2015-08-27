@@ -1,0 +1,27 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Hyde
+tagline:          'A Jekyll theme'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://mauzy.ga
+baseurl:          /
+
+author:
+  name:           'Brandon Wetzel'
+  url:            https://github.com/mauzybroadway
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:		  https://github.com/mauzybroadway/
+#  main:           https://github.com/mauzybroadway/
+#  synth:	  https://github.com/mauzybroadway/mycrosinth
