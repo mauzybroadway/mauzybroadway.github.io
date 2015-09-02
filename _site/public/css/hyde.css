@@ -77,10 +77,6 @@ html {
     color: #fff;
 }
 
-.sidebar-body p {
-    font-size: .8rem;
-}
-
 .sidebar-bottom p {
     font-size: .5rem;
 }
@@ -121,6 +117,12 @@ html {
 /* Sidebar nav */
 .sidebar-nav {
     margin-bottom: 0;
+    text-align:left;
+    display:inline;
+}
+
+.sidebar-nav  a {
+    display: inline-block;
 }
 
 @media (min-width: 48em) {
@@ -131,6 +133,13 @@ html {
 	margin-bottom:50%;
 	text-align:center;
 	line-height: 2.75;
+	display:block;
+  }
+}
+
+@media (min-width: 48em) {
+    .sidebar-nav a {
+	display:block;
   }
 }
 
@@ -168,7 +177,8 @@ a.sidebar-nav-item:focus {
     right:  1rem;
     bottom: 0;
     left:   1rem;
-    padding: 1rem 3rem;
+    /*padding: 1rem 3rem;*/
+    padding:0;
 }
 
 @media (min-width: 48em) {
@@ -179,6 +189,12 @@ a.sidebar-nav-item:focus {
       padding: 1rem;
   }
 }
+
+
+.sidebar-body p {
+    font-size: .8rem;
+}
+
 
 .sidebar-img {
     float:top;
