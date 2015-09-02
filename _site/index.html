@@ -11,7 +11,7 @@
 
   <title>
     
-      Mauzy &middot; Broadway
+      b.wetz &middot; Brandon Wetzel
     
   </title>
 
@@ -36,19 +36,19 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-img">
       <a href="/">
-	<!--Mauzy-->
+	<!--b.wetz-->
 	<img src="/public/ele.jpg"/>
       </a>
     </div>
     <div class="sidebar-title">
       <a href="/">
-	<u>Mauzy</u>
+	<u>b.wetz</u>
       </a>
     </div>
 
     <div class="sidebar-body hidden">
       <div class="sidebar-about">
-	<p class="lead">Broadway</p>
+	<p class="lead">brandon wetzel</p>
       </div>
       
       <nav class="sidebar-nav hidden">
@@ -116,6 +116,63 @@ I hear that you and your band have sold your <strong>guitars</strong> and bought
 </blockquote>
 
 <p>Ayyy</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/stm32f4/arm/synth/music/2015/07/29/dma/">
+        Streaming Sound with the DMA and DAC
+      </a>
+    </h1>
+
+    <span class="post-date">29 Jul 2015</span>
+
+    <blockquote>
+  <p>Obligatory quote</p>
+</blockquote>
+
+<p>Start it off…</p>
+
+<p>Armed with a newfound mastery of (digital synthesis)[], it is now time to venture into the
+musical front, painting with the nearly unlimited variety of colors and textures
+provided by the digital palette on our STM32F4 microcontroller. But before you
+can break into your favorite Electric Piano 2 riff, or bust out a mellow
+Fantasia groove, we need to figure out how to actually send data to the DAC.</p>
+
+<p>Ref. pg 303 of the Refenence Manual (rev 10)</p>
+
+<blockquote>
+  <p>BREAK THESE INTO SECTIONS</p>
+</blockquote>
+
+<ul>
+  <li>Enable Clock</li>
+  <li>DMA1_Stream5 - Channel 7</li>
+  <li>Memory-to-periph</li>
+  <li>Increment</li>
+  <li>Alignment</li>
+  <li>Mode (circular)</li>
+  <li>Priority</li>
+  <li>FIFO</li>
+  <li>Burst</li>
+  <li>Double buffer
+    <ul>
+      <li>MEM: DMA_SxM0AR + DMA_SxM1AR</li>
+      <li>PPH: DMA_SxPAR</li>
+    </ul>
+  </li>
+  <li>Interrupts
+    <ul>
+      <li>TC	: Transfer Complete</li>
+      <li>HT	: Half Transfer</li>
+      <li>TE	: Transfer Error</li>
+      <li>FE	: FIFO Error</li>
+      <li>DME	: Direct Mode Error</li>
+    </ul>
+  </li>
+</ul>
+
 
   </div>
   
@@ -201,19 +258,6 @@ Stallman would probably come after me with a katana if I ran Keil.</p>
 
 <p>Check out more stuff at <a href="http://jqi.umd.edu/">JQI</a></p>
 
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/jqi/2015/06/28/another-post/">
-        Another Post
-      </a>
-    </h1>
-
-    <span class="post-date">28 Jun 2015</span>
-
-    <p>Woah, look at this, its another post. I bet it looks pretty cool down here below the other one.</p>
 
   </div>
   

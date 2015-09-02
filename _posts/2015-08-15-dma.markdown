@@ -1,0 +1,42 @@
+---
+layout: post
+comments: true
+title:  "Streaming Sound with the DMA and DAC"
+date:   2015-07-29 18:14:14
+categories: stm32f4 arm synth music
+---
+
+>Obligatory quote
+
+Start it off...
+
+Armed with a newfound mastery of (digital synthesis)[], it is now time to venture into the
+musical front, painting with the nearly unlimited variety of colors and textures
+provided by the digital palette on our STM32F4 microcontroller. But before you
+can break into your favorite Electric Piano 2 riff, or bust out a mellow
+Fantasia groove, we need to figure out how to actually send data to the DAC.
+
+Ref. pg 303 of the Refenence Manual (rev 10)
+
+>BREAK THESE INTO SECTIONS
+
+- Enable Clock
+- DMA1_Stream5 - Channel 7
+- Memory-to-periph
+- Increment
+- Alignment
+- Mode (circular)
+- Priority
+- FIFO
+- Burst
+- Double buffer
+  - MEM: DMA_SxM0AR + DMA_SxM1AR
+  - PPH: DMA_SxPAR
+- Interrupts
+  - TC	: Transfer Complete
+  - HT	: Half Transfer
+  - TE	: Transfer Error
+  - FE	: FIFO Error
+  - DME	: Direct Mode Error
+
+

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Mauzy</title>
+ <title>b.wetz</title>
  <link href="http://mauzy.ga/atom.xml" rel="self"/>
  <link href="http://mauzy.ga/"/>
- <updated>2015-08-27T11:08:59-04:00</updated>
+ <updated>2015-09-01T22:12:33-04:00</updated>
  <id>http://mauzy.ga</id>
  <author>
    <name>Brandon Wetzel</name>
@@ -24,6 +24,59 @@ I hear that you and your band have sold your &lt;strong&gt;guitars&lt;/strong&gt
 &lt;/blockquote&gt;
 
 &lt;p&gt;Ayyy&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Streaming Sound with the DMA and DAC</title>
+   <link href="http://mauzy.ga/stm32f4/arm/synth/music/2015/07/29/dma/"/>
+   <updated>2015-07-29T14:14:14-04:00</updated>
+   <id>http://mauzy.ga/stm32f4/arm/synth/music/2015/07/29/dma</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;Obligatory quote&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Start it off…&lt;/p&gt;
+
+&lt;p&gt;Armed with a newfound mastery of (digital synthesis)[], it is now time to venture into the
+musical front, painting with the nearly unlimited variety of colors and textures
+provided by the digital palette on our STM32F4 microcontroller. But before you
+can break into your favorite Electric Piano 2 riff, or bust out a mellow
+Fantasia groove, we need to figure out how to actually send data to the DAC.&lt;/p&gt;
+
+&lt;p&gt;Ref. pg 303 of the Refenence Manual (rev 10)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;BREAK THESE INTO SECTIONS&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Enable Clock&lt;/li&gt;
+  &lt;li&gt;DMA1_Stream5 - Channel 7&lt;/li&gt;
+  &lt;li&gt;Memory-to-periph&lt;/li&gt;
+  &lt;li&gt;Increment&lt;/li&gt;
+  &lt;li&gt;Alignment&lt;/li&gt;
+  &lt;li&gt;Mode (circular)&lt;/li&gt;
+  &lt;li&gt;Priority&lt;/li&gt;
+  &lt;li&gt;FIFO&lt;/li&gt;
+  &lt;li&gt;Burst&lt;/li&gt;
+  &lt;li&gt;Double buffer
+    &lt;ul&gt;
+      &lt;li&gt;MEM: DMA_SxM0AR + DMA_SxM1AR&lt;/li&gt;
+      &lt;li&gt;PPH: DMA_SxPAR&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Interrupts
+    &lt;ul&gt;
+      &lt;li&gt;TC	: Transfer Complete&lt;/li&gt;
+      &lt;li&gt;HT	: Half Transfer&lt;/li&gt;
+      &lt;li&gt;TE	: Transfer Error&lt;/li&gt;
+      &lt;li&gt;FE	: FIFO Error&lt;/li&gt;
+      &lt;li&gt;DME	: Direct Mode Error&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
 </content>
  </entry>
  

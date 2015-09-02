@@ -7,9 +7,9 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Mauzy
-tagline:          'Broadway'
-description:	  'Broadway'
+title:            b.wetz
+tagline:          'Brandon Wetzel'
+description:	  'brandon wetzel'
 #description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a#> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://tw#itter.com/mdo" target="_blank">@mdo</a>.'
 url:              http://mauzy.ga
 baseurl:          /

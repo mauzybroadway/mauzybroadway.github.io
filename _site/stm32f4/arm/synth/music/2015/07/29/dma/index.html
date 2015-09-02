@@ -11,7 +11,7 @@
 
   <title>
     
-      STM32F4 Linux Development - Eclipse + GCC ARM Embedded + openOCD &middot; b.wetz
+      Streaming Sound with the DMA and DAC &middot; b.wetz
     
   </title>
 
@@ -99,31 +99,53 @@
 
     <div class="content container">
       <div class="post">
-  <h1 class="post-title">STM32F4 Linux Development - Eclipse + GCC ARM Embedded + openOCD</h1>
-  <span class="post-date">28 Jul 2015</span>
-  <p>So, you decided embedded programming is what the hip kids do these days. The
-sight of a $15 ARM board tickled you in places an Arduino could never reach.
-So, you bought it, ideas saturate your brain and you can’t wait to wring
-out your thoughts into this thing. But it just sits there on your table begging
-for sweet binary nectar. How do you feed it?</p>
+  <h1 class="post-title">Streaming Sound with the DMA and DAC</h1>
+  <span class="post-date">29 Jul 2015</span>
+  <blockquote>
+  <p>Obligatory quote</p>
+</blockquote>
 
-<p>For the past four months I have been running the limited version of Keil,
-chained to the measly 32kB debug limit I was quickly limited to debugging
-diassembly. While that works great for debugging assembly code, the lack of
-debugging information in the disassembly made working with C code an utter
-nightmare. So it’s time to ditch the VM and head back to the wonderful, organic
-world of FOSS. Besides, I also switched over to a notebook running Debian and
-Stallman would probably come after me with a katana if I ran Keil.</p>
+<p>Start it off…</p>
 
-<h2 id="tools-required">Tools Required:</h2>
+<p>Armed with a newfound mastery of (digital synthesis)[], it is now time to venture into the
+musical front, painting with the nearly unlimited variety of colors and textures
+provided by the digital palette on our STM32F4 microcontroller. But before you
+can break into your favorite Electric Piano 2 riff, or bust out a mellow
+Fantasia groove, we need to figure out how to actually send data to the DAC.</p>
+
+<p>Ref. pg 303 of the Refenence Manual (rev 10)</p>
+
+<blockquote>
+  <p>BREAK THESE INTO SECTIONS</p>
+</blockquote>
+
 <ul>
-  <li><a href="http://www.eclipse.org/downloads/">Eclipse IDE</a></li>
-  <li><a href="gnuarmeclipse.livius.net/blog/">GNU ARM Eclipse plugin</a>
+  <li>Enable Clock</li>
+  <li>DMA1_Stream5 - Channel 7</li>
+  <li>Memory-to-periph</li>
+  <li>Increment</li>
+  <li>Alignment</li>
+  <li>Mode (circular)</li>
+  <li>Priority</li>
+  <li>FIFO</li>
+  <li>Burst</li>
+  <li>Double buffer
     <ul>
-      <li>Includes the <a href="">GNU ARM Embedded toolchain (arm-none-eabi-gcc)</a></li>
+      <li>MEM: DMA_SxM0AR + DMA_SxM1AR</li>
+      <li>PPH: DMA_SxPAR</li>
+    </ul>
+  </li>
+  <li>Interrupts
+    <ul>
+      <li>TC	: Transfer Complete</li>
+      <li>HT	: Half Transfer</li>
+      <li>TE	: Transfer Error</li>
+      <li>FE	: FIFO Error</li>
+      <li>DME	: Direct Mode Error</li>
     </ul>
   </li>
 </ul>
+
 
 </div>
 
@@ -142,9 +164,9 @@ Stallman would probably come after me with a katana if I ran Keil.</p>
     
       <li>
         <h3>
-          <a href="/stm32f4/arm/synth/music/2015/07/29/dma/">
-            Streaming Sound with the DMA and DAC
-            <small>29 Jul 2015</small>
+          <a href="/stm32f4/arm/linux/2015/07/28/stm_setup/">
+            STM32F4 Linux Development - Eclipse + GCC ARM Embedded + openOCD
+            <small>28 Jul 2015</small>
           </a>
         </h3>
       </li>
