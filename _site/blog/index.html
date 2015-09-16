@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Blog &middot; b.wetz
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">  
+  <div class="container sidebar-sticky">
+    <div class="sidebar-img">
+      <a href="/">
+	<!--b.wetz-->
+	<img src="/public/ele.jpg"/>
+      </a>
+    </div>
+    <div class="sidebar-title">
+      <a href="/">
+	<u>b.wetz</u>
+      </a>
+    </div>
+
+    <div class="sidebar-body">
+      <div class="sidebar-about hidden">
+	<p class="lead">brandon wetzel</p>
+      </div>
+      
+      <nav class="sidebar-nav">
+	<a class="sidebar-nav-item" href="/">Home</a>
+	
+	
+	
+	
+	
+        
+        
+        
+	
+        
+	
+        
+        
+        
+	
+        
+        
+        
+	
+        
+        
+        
+	
+        
+        
+        <a class="sidebar-nav-item" href="/resume/">Resume</a>
+        
+        
+	
+        
+        
+        
+	
+
+	<a class="sidebar-nav-item" href="http://github.com/mauzybroadway/">Github</a>
+	<!--span class="sidebar-nav-item">Currently v2.1.0</span-->
+	
+      </nav>
+    </div>
+    <div class="sidebar-bottom hidden">
+      <p class="small">&copy; 2015. All rights reserved.</p>
+    </div>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/stm32f4/arm/synth/music/2015/07/29/synth/">
+        Homemade Synthesizer Baked With Love
+      </a>
+    </h1>
+
+    <span class="post-date">29 Jul 2015</span>
+
+    <blockquote>
+  <p>I hear that you and your band have sold your <strong>guitars</strong> and bought <strong>turntables</strong>.<br />
+I hear that you and your band have sold your <strong>turntables</strong> and bought <strong>guitars</strong>.<br />
+I hear that you and your band have sold your <strong>guitars</strong> and bought <strong>STM32F4’s</strong>.</p>
+</blockquote>
+
+<p>Ayyy</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/stm32f4/arm/synth/music/2015/07/29/dma/">
+        Streaming Sound with the DMA and DAC
+      </a>
+    </h1>
+
+    <span class="post-date">29 Jul 2015</span>
+
+    <blockquote>
+  <p>Obligatory quote</p>
+</blockquote>
+
+<p>Start it off…</p>
+
+<p>Armed with a newfound mastery of (digital synthesis)[], it is now time to venture into the
+musical front, painting with the nearly unlimited variety of colors and textures
+provided by the digital palette on our STM32F4 microcontroller. But before you
+can break into your favorite Electric Piano 2 riff, or bust out a mellow
+Fantasia groove, we need to figure out how to actually send data to the DAC.</p>
+
+<p>Ref. pg 303 of the Refenence Manual (rev 10)</p>
+
+<blockquote>
+  <p>BREAK THESE INTO SECTIONS</p>
+</blockquote>
+
+<ul>
+  <li>Enable Clock</li>
+  <li>DMA1_Stream5 - Channel 7</li>
+  <li>Memory-to-periph</li>
+  <li>Increment</li>
+  <li>Alignment</li>
+  <li>Mode (circular)</li>
+  <li>Priority</li>
+  <li>FIFO</li>
+  <li>Burst</li>
+  <li>Double buffer
+    <ul>
+      <li>MEM: DMA_SxM0AR + DMA_SxM1AR</li>
+      <li>PPH: DMA_SxPAR</li>
+    </ul>
+  </li>
+  <li>Interrupts
+    <ul>
+      <li>TC	: Transfer Complete</li>
+      <li>HT	: Half Transfer</li>
+      <li>TE	: Transfer Error</li>
+      <li>FE	: FIFO Error</li>
+      <li>DME	: Direct Mode Error</li>
+    </ul>
+  </li>
+</ul>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/stm32f4/arm/linux/2015/07/28/stm_setup/">
+        STM32F4 Linux Development - Eclipse + GCC ARM Embedded + openOCD
+      </a>
+    </h1>
+
+    <span class="post-date">28 Jul 2015</span>
+
+    <p>So, you decided embedded programming is what the hip kids do these days. The
+sight of a $15 ARM board tickled you in places an Arduino could never reach.
+So, you bought it, ideas saturate your brain and you can’t wait to wring
+out your thoughts into this thing. But it just sits there on your table begging
+for sweet binary nectar. How do you feed it?</p>
+
+<p>For the past four months I have been running the limited version of Keil,
+chained to the measly 32kB debug limit I was quickly limited to debugging
+diassembly. While that works great for debugging assembly code, the lack of
+debugging information in the disassembly made working with C code an utter
+nightmare. So it’s time to ditch the VM and head back to the wonderful, organic
+world of FOSS. Besides, I also switched over to a notebook running Debian and
+Stallman would probably come after me with a katana if I ran Keil.</p>
+
+<h2 id="tools-required">Tools Required:</h2>
+<ul>
+  <li><a href="http://www.eclipse.org/downloads/">Eclipse IDE</a></li>
+  <li><a href="gnuarmeclipse.livius.net/blog/">GNU ARM Eclipse plugin</a>
+    <ul>
+      <li>Includes the <a href="">GNU ARM Embedded toolchain (arm-none-eabi-gcc)</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/jqi/dds/2015/06/30/dds/">
+        DDS
+      </a>
+    </h1>
+
+    <span class="post-date">30 Jun 2015</span>
+
+    <p>The aptly named Direct Digital Synthesizer (DDS) is a device which digitally (and directly…) synthesizes precise waveforms in a conveniently programmable manner. Most often, DDSs output sinusoids, but can theoretically output any periodic function. </p>
+
+<h3 id="calculating-output">Calculating Output</h3>
+<p>A DDS crafts its output by stepping through a wavetable (often sinusoidal) stored in ROM. Each entry in the wavetable is typically an integer or fixed-point value representing a voltage level, which is then sent to a Digital-to-Analog Converter (DAC) to prepare an analog output signal. To output a range of frequencies, the DDS makes use of a <em>phase accumulator</em> which represents the current index in the wavetable. If the phase accumulator is incremented by 1 on each clock pulse, the DDS will step through every value in the wavetable, thus creating its lowest possible frequency. If the phase accumulator has <script type="math/tex">n</script> bits, the output frequency is defined as:</p>
+
+<script type="math/tex; mode=display">f_{out} = \frac{f_{clk}}{2^n}</script>
+
+<p>However, if the wavetable is incremented by some some larger value, the faster the output frequency. This incrementation value is defined by the <em>tuning word</em>, <script type="math/tex">M</script>, which is a programmable register on the DDS. With the inclusion of a tuning word, the output frequency is now defined as:</p>
+
+<script type="math/tex; mode=display">f_{out} = M\frac{f_{clk}}{2^n}</script>
+
+<p>Output waveforms are limited to about 40% of the clock frequency (<script type="math/tex">f_{clk}</script>) to avoid errors which occur when approaching and surpassing the Nyquist frequency (half of the sampling rate, which is in this case <script type="math/tex">f_{clk}</script>).</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/jekyll/update/2015/06/29/welcome-to-jekyll/">
+        Fancy Things
+      </a>
+    </h1>
+
+    <span class="post-date">29 Jun 2015</span>
+
+    <p>You can do all sorts of fancy stuff, like write the TI-Schrodinger equation:</p>
+
+<script type="math/tex; mode=display">-\frac{\hbar ^2}{2m} \psi _{xx} + V\psi = E\psi</script>
+
+<p>And write bits of code:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
+<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span></code></pre></div>
+
+<p>Check out more stuff at <a href="http://jqi.umd.edu/">JQI</a></p>
+
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page2">Older</a>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+
+    </div>
+
+  </body>
+</html>

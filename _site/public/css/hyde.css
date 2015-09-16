@@ -129,8 +129,10 @@ html {
     .sidebar-nav {
 	/*position: absolute;
 	bottom: 1em;*/
-	margin-top:50%;
-	margin-bottom:50%;
+	/*margin-top:50%;
+	margin-bottom:50%;*/
+	top:70%;
+	transform: translateY(60%);
 	text-align:center;
 	line-height: 2.75;
 	display:block;

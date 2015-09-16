@@ -10,7 +10,6 @@ relative_permalinks: true
 title:            b.wetz
 tagline:          'Brandon Wetzel'
 description:	  'brandon wetzel'
-#description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a#> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://tw#itter.com/mdo" target="_blank">@mdo</a>.'
 url:              http://mauzy.ga
 baseurl:          /
 
@@ -19,6 +18,7 @@ author:
   url:            https://github.com/mauzybroadway
 
 paginate:         5
+paginate_path:	  /blog/page:num
 
 # Custom vars
 version:          2.1.0

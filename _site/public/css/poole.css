@@ -26,6 +26,8 @@
  * Pagination
  * Reverse layout
  * Themes
+ * 
+ * Custom layouts
  */
 
 
@@ -430,3 +432,24 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+
+.centering p{
+    height:100%;
+    /*position: relative;*/
+    display:inline-block;
+    /*top: 50%;
+    bottom:50%;
+    transform: translateY(50%);*/
+    vertical-align:middle;
+    line-height:normal;
+}
+
+/*@media (min-width: 58em) {
+    .centering {
+	/*top:30%;
+	transform: translateY(30%);
+	overflow:hidden;*/
+	vertical-align:middle;
+    }
+}*/

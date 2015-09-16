@@ -63,11 +63,13 @@
         
 	
         
+	
         
-        <a class="sidebar-nav-item" href="/about/">About</a>
         
         
 	
+        
+        
         
 	
         
@@ -100,32 +102,6 @@
     <div class="content container">
       <div class="posts">
   
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/jqi/2015/06/28/another-post/">
-        Another Post
-      </a>
-    </h1>
-
-    <span class="post-date">28 Jun 2015</span>
-
-    <p>Woah, look at this, its another post. I bet it looks pretty cool down here below the other one.</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/jqi/2015/06/28/another-post/">
-        Another Post
-      </a>
-    </h1>
-
-    <span class="post-date">28 Jun 2015</span>
-
-    <p>Woah, look at this, its another post. I bet it looks pretty cool down here below the other one.</p>
-
-  </div>
-  
 </div>
 
 <div class="pagination">
@@ -133,9 +109,7 @@
     <span class="pagination-item older">Older</span>
   
   
-    
-      <a class="pagination-item newer" href="/">Newer</a>
-    
+    <span class="pagination-item newer">Newer</span>
   
 </div>
     </div>
